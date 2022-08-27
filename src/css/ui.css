@@ -1,0 +1,21 @@
+label, legend, form, fieldset, button, input, textarea, select, option, output {
+    font-size: calc(100vw / (var(--line-of-chars)));
+    /*line-height: 1.0em;*/
+    color: var(--fg-color);
+    background-color: var(--bg-color);
+    border-color: var(--fg-color);
+}
+pre > code {
+    font-size: calc(100vw / calc(var(--line-of-chars) * 2));
+}
+textarea {
+    width: 100%;
+    /*line-height: 1.5em;*/
+}
+input[type="checkbox"] + .label {
+    color: var(--thin-fg-color);
+}
+input[type="checkbox"]:checked + .label {
+    /* チェックされたチェックボックス直後の.labelのスタイル */
+    color: var(--fg-color);
+}
